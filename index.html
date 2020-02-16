@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light Cursor</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section>
+    <div class="light"></div>
+    <div class="letters">
+    </div>
+    <img src="images/bg.jpg" alt="image">
+  </section>
+
+  <div class="top">
+    <i class="material-icons" onclick="openModal('modalResponse')">visibility</i>
+  </div>
+
+  <div class="config">
+    <div class="menu">
+      <i class="material-icons">home</i>
+      <i class="material-icons">settings</i>
+    </div>
+  
+    <div class="menu">
+      <i id="light" class="material-icons">flash_auto</i>
+    </div>
+  </div>
+
+  <div id="modalResponse" class="modal open">
+    <div class="modalBox">
+      <button onclick="closeModal('modalResponse')">X</button>
+      <h1>ACERTE O NOME OU MORRA!</h1>
+      <input autofocus autocomplete="off" type="text" name="word" id="word">
+    </div>
+  </div>
+
+  <audio loop id="music">
+    <source src="songs/promise.mp3" type="audio/mpeg">
+    Seu navegador não possui suporte ao elemento audio
+  </audio>
+
+  <script src="js/lettersInit.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/keys.js"></script>
+  <script src="js/songs.js"></script>
+  <script src="js/light.js"></script>
+
+</body>
+
+</html>
